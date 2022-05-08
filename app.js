@@ -1020,8 +1020,7 @@ const msOffset = Date.now() - startDate
 const dayOffset = msOffset / MILLISECONDS_TO_DAYS
 const index = Math.floor(dayOffset)
 const tomorrow = startDate.valueOf() + (index + 1) * MILLISECONDS_TO_DAYS;
-const answerName = "Cedric Diggory"
-// const answerName = answerList[index]
+const answerName = answerList[index]
 const answer = students.find((student) => student.name === answerName)
 let attempts = 1
 let guesses = 7
