@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Woodle</title>
+    <meta name="description" content="Oliver Woodle: the Wordle inspired game where you have to guess a Hogwarts student daily."/>
+    <meta name="keywords" content="harry potter, potter, wordle, hogwarts, quidditch, games, magic, books, potterhead"/>
+    <script src="https://kit.fontawesome.com/ffebfeda30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H61Z8PQW8T"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H61Z8PQW8T');
+    </script>
+</head>
+<body>
+    <div class="game-container">
+        <img src="/img/logo.png" alt="logo oliver woodle" class="logo">
+
+        <div class="info">
+            <i class="fa-solid fa-chart-simple stats-button"></i>
+            <i class="fa-solid fa-circle-question info-button"></i>
+        </div>
+
+        <div class="search">
+            <input type="text" name="" id="hcraes" autocomplete="new-password">
+            <div class="match-list"></div>
+        </div>
+
+        <div class="row-container"> 
+            <div class="title-row">
+                <span class="student-name title-column"></span>
+                <span class="house title-column">House</span>
+                <span class="sort-year title-column">Sorted</span>
+                <span class="gender title-column">Gender</span>
+                <span class="achievements title-column">Position</span>
+                <span class="quidditch title-column">Quidditch</span>
+                <span class="ps title-column">PS</span>
+                <span class="cos title-column">CoS</span>
+                <span class="poa title-column">PoA</span>
+                <span class="gof title-column">GoF</span>
+                <span class="ootp title-column">OotP</span>
+                <span class="hbp title-column">HBP</span>
+                <span class="dh title-column">DH</span>
+            </div>
+            <div class="guess-container">
+            </div>
+        </div>
+    </div>
+
+        <div class="instr">
+        <i class="fa-solid fa-xmark instr-close"></i>
+        <div class="lang">
+            <h2>Guess the Hogwarts student!</h2>
+            <ul class="instructions">
+                <li>You have 7 trys to guess someone who was a student durent Harry Potter year's at Hogwartss</li>
+                <li><span class="highlight-g">Green</span> means correct</li>
+                <li><span class="highlight-y">Yellow</span> means closeness</li>
+                    <ul class="secondary-list">
+                        <li>In the sorted column it means a difference of one year</li>
+                        <li>In the position column it means it has one of the same positions</li>
+                        <li>In the Quidditch column it means it is also a Quiddicht player</li>
+                        <li>In the Books/Movies column it means it shows up in either the book or the movie or both</li>
+                    </ul>
+                <h2>Come back everyday!</h2>
+            </ul>
+        </div>
+    </div>
+
+    <div class="stats">
+        <i class="fa-solid fa-xmark stats-close"></i>
+        <div class="stat stat-border">
+            <div class="stat-number" id="played"></div>
+            <p>Played</p>
+        </div>
+        <div class="stat stat-border">
+            <div class="stat-number" id="winpct"></div>
+            <p>Won</p>
+        </div>
+        <div class="stat">
+            <div class="stat-number" id="streak"></div>
+            <p>Streak</p>
+        </div>
+    </div>
+
+    <div class="win">
+    </div>
+
+    <div class="lose">
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
