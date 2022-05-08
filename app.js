@@ -1167,7 +1167,7 @@ statsClose.addEventListener('click', () => {
 // Search & autocomplete
 const search = document.querySelector('#hcraes')
 const matchList = document.querySelector('.match-list')
-search.placeholder = `Make a guess... You have ${guesses} trys left`
+search.placeholder = `Make a guess... You have ${guesses} tries left`
 let possibleGuesses
 
 const searchStudents = () => {
@@ -1352,7 +1352,7 @@ const searchStudents = () => {
 
             attempts += 1
             guesses -= 1
-            search.placeholder = `You have ${guesses} trys left`
+            search.placeholder = `You have ${guesses} tries left`
             checkGuess(guess)
             handleLose(guess)
             preserveGameState()
