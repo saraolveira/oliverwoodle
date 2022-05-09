@@ -1029,8 +1029,6 @@ let lost = "no"
 
 const today = new Date(new Date().setHours(0, 0, 0, 0));
 
-console.log(answer)
-
 const guessContainer = document.querySelector('.guess-container')
 const timer = document.getElementById('timer')
 const winBox = document.querySelector('.win')
